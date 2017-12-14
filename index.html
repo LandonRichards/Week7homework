@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Employee Track</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+  <h1 class="text-center">Train times!</h1>
+  <h3 class="text-center">"But Mussolini keeps the trains running on time."</h3>
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Trains Planes and Automobiles! Wait just Trains...</h4>
+    </div>
+    <div class="panel-body table-responsive">
+    <table class="table table-hover table-striped text-center" id='employeeTable'>
+            <thead>
+              <tr>
+                <th class="name">
+                  <span id="name" class="glyphicon glyphicon-blackboard glyphicon-padding" aria-hidden="true"></span>
+                  Train name
+                </th>
+
+                <th class="role">
+                  <span id="destination"   class="glyphicon glyphicon-road glyphicon-padding"></span>
+                  Destination
+                </th>
+
+               <th class="text-center">
+                <span id="frequency"  class="glyphicon glyphicon-calendar glyphicon-padding" aria-hidden="true"></span>
+                Frequency(Minutes)
+
+              </th>
+                <th class="text-center">
+                  <span id="nextarrival"  class="glyphicon glyphicon-time glyphicon-padding" aria-hidden="true"></span>Next Arrival
+                </th>
+                <th class="text-center">
+                  <span id="name"  class="glyphicon glyphicon-time glyphicon-padding" aria-hidden="true"></span>Minutes Away
+                </th>
+              </tr>
+
+            </thead>
+            <tbody id="traintablebody">
+              <tr class="appendedtext">
+                <td id="name">
+                  this is a test
+                
+                </td>
+                <td id="destination">
+                  testing
+                </td>
+                <td id="frequency">
+                 hello world
+                </td>
+                <td id="nextarrival">
+                sup boys
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+	</div>
+	<div class="container">
+		<div class="input-group">
+  <span class="input-group-addon" class="glyphicon glyphicon-user glyphicon-padding">Add a Train</span>
+  <input type="text" class="form-control" placeholder="Enter Train Name Here" id="basic-addon1" aria-describedby="basic-addon1">
+</div>
+<br>
+<div class="input-group">
+	<span class="input-group-addon">Destination</span>
+  <input type="text" class="form-control" id="basic-addon2" placeholder="Enter the Destination Here" aria-describedby="basic-addon2">
+</div>
+<br>
+<div class="input-group">
+  <span class="input-group-addon">First Train Time</span>
+  <input type="text" class="form-control" id="basic-addon3" placeholder="First Train Time goes here" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<br>
+<div class="input-group">
+  <span class="input-group-addon" >Frequency in minutes</span>
+  <input type="text" class="form-control" id="basic-addon4" placeholder="enter frequency here" aria-label="Amount (to the nearest dollar)">
+  
+</div>
+<br>
+</div>
+<br>
+</div>
+<div class="container">
+<div class="footer">
+	<button type="button" id="add-user" class="btn btn-primary btn-lg btn-block">Click me to run that train! Choo Choo!</button>
+</div>
+</div>
+</div>
+
+	</div>
+		
+</body>
+</html>
